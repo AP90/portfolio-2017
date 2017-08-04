@@ -103,7 +103,7 @@ header {
 .menu {
     z-index: 101;
     width: 100%;
-    background: #f6f6f6;
+    background: rgba(246, 246, 246, .95);
     text-align: center;
     z-index: 100;
 }
@@ -157,7 +157,7 @@ header {
 
 .intro h1 {
     font-size: 8em;
-    padding: 2.5em 0 .3em 0;
+    padding: 2.4em 0 .3em 0;
 }
 
 .intro h3 {
@@ -174,7 +174,8 @@ header {
 }
 
 .work-pic-panel {
-    padding: 0;
+    padding: 5em 0;
+    background: #f1f1f1;
 }
 
 .work-pic {
@@ -193,3 +194,11 @@ header {
     font-size: 2em;
     padding-top: 1em;
 }
+
+/*** FOOTER SECTION ***/
+footer {
+    padding: 2em 0;
+    background-color: #323232;
+    color: white;
+    text-align: center;
+} 

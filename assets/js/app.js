@@ -1,4 +1,5 @@
 
+//navigation bar js 
 $(".cross").hide();
 $(".menu").hide();
 
@@ -18,3 +19,8 @@ $(".cross").click(function() {
         $("header").css("padding", "6.8em 0");
     });
 });
+
+//fade in scrolling
+window.sr = ScrollReveal();
+sr.reveal(".work-pic", {duration: 800});
+sr.reveal(".work-text", {duration: 800});

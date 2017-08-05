@@ -6,10 +6,15 @@ grey - #f6f6f6
 */
 
 /*ELEMENT SELECTORS*/
+html, body {
+    height: 100%;
+}
 
 body {
     font-family: HKGrotesk, Helvetica, sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -33,6 +38,10 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+h1 {
+    font-size: 8em;
+    padding: 2.4em 0 .3em 0;
+}
 
 /*CLASS SELECTORS*/
 
@@ -116,7 +125,7 @@ header {
 
 .menu li {
     display: block;
-    font-size: 3em;
+    font-size: 4em;
     border-bottom: 1px solid #f1f1f1;
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -147,6 +156,7 @@ header {
 }
 
 /*** INTRO SECTION ***/
+
 .intro {
     box-sizing: border-box;
     height: 60em;
@@ -155,10 +165,6 @@ header {
     background-size: cover;
 }
 
-.intro h1 {
-    font-size: 8em;
-    padding: 2.4em 0 .3em 0;
-}
 
 .intro h3 {
     font-size: 2em;
@@ -202,3 +208,42 @@ footer {
     color: white;
     text-align: center;
 } 
+
+
+/*** STICKY FOOTER ***/
+.content-main {
+    flex: 1 0 auto;
+    background-color:white;
+}
+
+
+/*** ABOUT PAGE ***/
+
+.about {
+    box-sizing: border-box;
+    height: 35em;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(246, 246, 246, .5)), url('../img/jeff-sheldon-laptop.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    box-sizing: border-box;
+    height: 35em;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(246, 246, 246, .5)), url('../img/ludde-lorentz-stairs.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.text-container {
+    background-color: white;
+    padding: 10em 2em;
+}
+
+.icons h1 {
+    padding: .8em .2em 0 0;
+    margin: 0;
+    display: inline-block;
+    color: #323232;
+    text-decoration: none;
+}
